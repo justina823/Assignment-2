@@ -5,12 +5,6 @@ Bo Ta
 Quoc Phong Luong
 Lai Sum Justina Chan
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
 #Git Workflow
 
 To follow this workflow you have to have git installed.
