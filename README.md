@@ -2,9 +2,26 @@
 
 Arthur Brito de Araujo Costa
 
+## Requirements
 
+Make sure you have the latest versions of **Docker** and **Docker Compose** installed on your machine.
 
-#Git Workflow
+Clone this repository or copy the files from this repository into a new folder. In the **docker-compose.yml**
+
+Make sure to [add your user to the `docker` group](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user) when using Linux.
+
+## Wordpress & Docker
+
+This file will setup Wordpress, MySQL & PHPMyAdmin with a single command. Add the code below to a file called "docker-compose.yaml" and run the command
+
+```
+$ docker-compose up -d
+
+# To Tear Down
+$ docker-compose down --volumes
+```
+
+## Git Workflow
 
 To follow this workflow you have to have git installed.
 
@@ -26,9 +43,9 @@ Create a commit
 
 Once you done with the feature you can publish it
 
-`git push origin HEAD`*
+`git push origin HEAD`\*
 
-*You might need to login or adjust your ssh keys to push to production.
+\*You might need to login or adjust your ssh keys to push to production.
 
 A link will be generated that can help you to create a **Pull Request**
 Example: https://github.com/jcu-cms-bachelors/Assignment-2/pull/new/feature/read-me
@@ -39,5 +56,3 @@ Pull Requests needs to be reviewed by the peers to be merged into **Staging** en
 [A staging environment is the last step before something goes into production and is visible on the live site. ](https://umbraco.com/about-us/umbraco-dictionary/staging-environment/#:~:text=A%20staging%20environment%20is%20the,they%20hit%20the%20live%20website. "A staging environment is the last step before something goes into production and is visible on the live site. ")
 
 After the things are push into staging and tested we can then push to the production which is the **main** branch.
-
-
